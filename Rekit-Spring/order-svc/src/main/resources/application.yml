@@ -1,0 +1,38 @@
+# application.yml
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: order-service
+  datasource:
+    name: old-db
+    url: ${ORDER_DATASOURCE_URL}
+    username: ${ORDER_DATASOURCE_USERNAME}
+    password: ${ORDER_DATASOURCE_PASSWORD}
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - com/**/mapper/*.xml
+
+lmm:
+  common:
+    sentry-dsn: ${SENTRY_DSN}
+    deploy-env: ${DEPLOY:V2}
+  signing-secret: ${SIGNING_SECRET}

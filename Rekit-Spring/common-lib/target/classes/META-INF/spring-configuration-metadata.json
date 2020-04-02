@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "lmm.common",
+      "type": "com.lmm.common.config.LmmProps",
+      "sourceType": "com.lmm.common.config.LmmProps"
+    }
+  ],
+  "properties": [
+    {
+      "name": "lmm.common.deploy-env",
+      "type": "java.lang.String",
+      "sourceType": "com.lmm.common.config.LmmProps"
+    },
+    {
+      "name": "lmm.common.sentry-dsn",
+      "type": "java.lang.String",
+      "sourceType": "com.lmm.common.config.LmmProps"
+    }
+  ],
+  "hints": []
+}
