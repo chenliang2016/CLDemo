@@ -95,7 +95,7 @@ export default class Header extends PureComponent {
 
     return (
       <Layout.Header
-        className={classnames("header", {
+        className={classnames("ly_header", {
           ["fixed"]: fixed,
           ["collapsed"]: collapsed,
         })}

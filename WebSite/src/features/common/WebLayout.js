@@ -13,20 +13,14 @@ import { BackTop, Layout } from 'antd'
 import { WebSiteLayout } from '../../components'
 
 const { Content } = Layout
-const { Sider,Header,Bread } = WebSiteLayout
+const { Header } = WebSiteLayout
 
-export class CommonLayout extends Component {
+export class WebLayout extends Component {
   previousPath = ''
   static propTypes = {
     admin: PropTypes.object.isRequired,
     actions: PropTypes.object.isRequired,
   };
-
-  onCollapseChange = () => {
-     const {actions} = this.props;
-     const {collapseChange} = actions;
-     collapseChange();
-  }
 
   render() {
 
@@ -106,4 +100,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(CommonLayout);
+)(WebLayout);
