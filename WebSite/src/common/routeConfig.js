@@ -1,6 +1,6 @@
 import { App } from '../features/home';
 import {
-  Layout,
+  WebSiteLayout,
 } from '../features/common/';
 import { PageNotFound } from '../features/common';
 import homeRoute from '../features/home/route';
@@ -34,7 +34,7 @@ const routes = [
       },
       {
         path: '/',
-        component: Layout,
+        component: WebSiteLayout,
         childRoutes: [
           ...childRoutes,
           { path: '*', name: 'Page not found', component: PageNotFound },

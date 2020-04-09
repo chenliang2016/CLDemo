@@ -21,14 +21,6 @@ const initialState = {
         breadcrumbParentId: '1',
         icon: 'shop',
         name: '店铺管理',
-        route: '/',
-      },
-      {
-        id: '3',
-        menuParentId: '2',
-        breadcrumbParentId: '1',
-        icon: 'shop',
-        name: '店铺列表',
         route: '/demo/shop',
       },
       {
