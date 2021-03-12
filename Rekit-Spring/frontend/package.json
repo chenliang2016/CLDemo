@@ -47,7 +47,7 @@
     "qiniu-js": "^2.5.4",
     "raf": "3.4.0",
     "react": "^16.2.0",
-    "react-dev-utils": "^5.0.0",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^4.0.0",
     "react-perfect-scrollbar": "^1.5.3",
